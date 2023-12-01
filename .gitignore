@@ -1,6 +1,4 @@
-.git
-.gignore
-build.gradle
-README.md
-assets/
-src/
+build /
+bin /
+.DS_Store
+.gradle

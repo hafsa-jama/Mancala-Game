@@ -13,7 +13,7 @@ public class AyoRules extends GameRules {
 
     private static final int MIN_PIT_NUMBER = 1;
     private static final int MAX_PIT_NUMBER = 12;
-    private static final int SAFETY_COUNTER = 20;
+    private static final int SAFETY_COUNTER = 16;
     private static final int SPECIAL_PIT_ONE = 6;
     private static final int SPECIAL_PIT_TWO = 13;
 
@@ -27,6 +27,7 @@ public class AyoRules extends GameRules {
     public int moveStones(final int startPit, final int playerNum) throws InvalidMoveException {
         // validate starting pit
         int currentPit = startPit;
+        skipPit = startPit;
         if (currentPit < MIN_PIT_NUMBER  || currentPit > MAX_PIT_NUMBER) { 
             throw new InvalidMoveException();
         } else {
@@ -37,7 +38,7 @@ public class AyoRules extends GameRules {
             // main loop for distributing stones
             while (!isTurnOver) {
                 safetyCounter++;
-                if (safetyCounter == SAFETY_COUNTER) { // Prevent infinite loops
+                if (safetyCounter == SAFETY_COUNTER) { // prevent infinite loops
                     return -1;
                 }
                 // distribute stones starting from the chosen pit
@@ -57,7 +58,7 @@ public class AyoRules extends GameRules {
        
             // handling captures if the final stone lands in an empty pit on the player's side
             if (finalPit != 6 && finalPit != 13) {
-                finalPit++;
+               // finalPit++;
                 if (gameBoard.getNumStones(finalPit) == MIN_PIT_NUMBER) {
                     if (finalPit > 6 && playerNum == 2) {
                         gameBoard.addToStore(playerNum, captureStones(finalPit));
@@ -88,7 +89,8 @@ public class AyoRules extends GameRules {
         while (count != capturedStones) {
             count += 1;
             index += 1;
-            index = checkOwnStore(index); // checks if valid location for stone distribution
+
+           index = checkOwnStore(index); // checks if valid location for stone distribution
         }
 
         finalPit = index;
@@ -102,7 +104,7 @@ public class AyoRules extends GameRules {
         final int oppositePit = 13 - stoppingPoint;
 
         // calculates captured stones from both the stopping point and opposite pit
-        return gameBoard.removeStones(oppositePit) + gameBoard.removeStones(stoppingPoint);
+        return gameBoard.removeStones(oppositePit);
     }
 
     @Override

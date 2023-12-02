@@ -57,7 +57,7 @@ Graphical User Interface (GUI) Issues:
 The project currently lacks a fully functional GUI, although players are still able to interact with the game it does
 not fully work.
 
-There are three known failed JUnit tests. These failures indicate potential bugs / logical errors in the game's rules or mechanics. 
+There are one known failed JUnit tests. The failure indicates potential bugs / logical errors in the game's rules or mechanics. 
 The game might not always behave as expected, particularly in edge-case scenarios or complex game scenarios.
 
 ## Author Information

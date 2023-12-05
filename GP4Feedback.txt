@@ -1,0 +1,219 @@
+
+
+********
+ Gradle Layout Check 
+********
+Gradle Layout is correct.
+
+********
+ Extra files found in repo 
+********
+no extra files found
+
+********
+ Missing Readme Headings 
+********
+
+
+********
+ Build Check on repo as submitted 
+********
+> Task :clean UP-TO-DATE
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :pmdTest NO-SOURCE
+> Task :test NO-SOURCE
+
+> Task :pmdMain
+Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+74 PMD rule violations were found. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/jamah/build/reports/pmd/main.html
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 2s
+4 actionable tasks: 3 executed, 1 up-to-date
+
+
+********
+ Action Listeners Implemented using lambdas 
+********
+Total Action Listeners: 7
+Total Lambda Expressions11
+
+********
+ Missing Swing Components 
+********
+JFileChooser
+
+
+********
+ PMD Rules Violations 
+********
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :pmdTest NO-SOURCE
+> Task :test NO-SOURCE
+
+> Task :pmdMain
+37 PMD rule violations were found. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/jamah/build/reports/pmd/main.html
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 2s
+4 actionable tasks: 4 executed
+
+
+********
+ Junit Test Results 
+********
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+AyoDistributeStonesTest > testSkipCorrectPitPlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoDistributeStonesTest.java:129
+
+AyoDistributeStonesTest > testSkipCorrectStorePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoDistributeStonesTest.java:145
+
+AyoDistributeStonesTest > testCorrectValuesInPitsPlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoDistributeStonesTest.java:176
+
+AyoDistributeStonesTest > testAddsToCorrectStorePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at AyoDistributeStonesTest.java:95
+
+AyoDistributeStonesTest > testAddsToCorrectStorePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoDistributeStonesTest.java:160
+
+AyoMoveStonesTest > testInvalidMoveOpponentSidePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at AyoMoveStonesTest.java:160
+        Caused by: java.lang.RuntimeException at AyoMoveStonesTest.java:161
+
+AyoMoveStonesTest > testInvalidMoveOpponentSidePlayerTwo() FAILED
+    org.opentest4j.AssertionFailedError at AyoMoveStonesTest.java:289
+        Caused by: java.lang.IndexOutOfBoundsException at AyoMoveStonesTest.java:290
+
+AyoMoveStonesTest > testMoveStonesMultiMoveNoCapturePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoMoveStonesTest.java:228
+
+AyoMoveStonesTest > testMoveStonesOpponentSideStopPlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoMoveStonesTest.java:304
+
+AyoMoveStonesTest > testMoveStonesZeroCapturePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at AyoMoveStonesTest.java:133
+
+AyoMoveStonesTest > testMoveStonesOneMovePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoMoveStonesTest.java:194
+
+AyoMoveStonesTest > testMoveStonesMultiMoveWithCapturePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at AyoMoveStonesTest.java:118
+
+AyoMoveStonesTest > testMoveStonesMultiMoveWithCapturePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at AyoMoveStonesTest.java:246
+
+KalahCaptureStonesTest > testCaptureWhenZeroPlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at KalahCaptureStonesTest.java:72
+
+KalahCaptureStonesTest > testCaptureWhenZeroPlayerTwo() FAILED
+    org.opentest4j.AssertionFailedError at KalahCaptureStonesTest.java:101
+
+KalahDistributeStonesTest > testSkipCorrectStorePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at KalahDistributeStonesTest.java:109
+
+KalahDistributeStonesTest > testCorrectValuesInPitsPlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at KalahDistributeStonesTest.java:93
+
+KalahDistributeStonesTest > testCorrectValuesInPitsPlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at KalahDistributeStonesTest.java:142
+
+KalahDistributeStonesTest > testAddsToCorrectStorePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at KalahDistributeStonesTest.java:125
+
+KalahMoveStonesTest > testInvalidMoveOpponentSidePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at KalahMoveStonesTest.java:148
+        Caused by: java.lang.RuntimeException at KalahMoveStonesTest.java:149
+
+KalahMoveStonesTest > testInvalidMoveOpponentSidePlayerTwo() FAILED
+    org.opentest4j.AssertionFailedError at KalahMoveStonesTest.java:279
+
+KalahMoveStonesTest > testMoveStonesWithCapturePlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at KalahMoveStonesTest.java:234
+
+KalahMoveStonesTest > testMoveStonesOpponentSideStopPlayerTwo() FAILED
+    java.lang.IndexOutOfBoundsException at KalahMoveStonesTest.java:313
+
+KalahMoveStonesTest > testMoveStonesZeroCapturePlayerOne() FAILED
+    org.opentest4j.AssertionFailedError at KalahMoveStonesTest.java:121
+
+KalahMoveStonesTest > testMoveStonesZeroCapturePlayerTwo() FAILED
+    java.lang.RuntimeException at KalahMoveStonesTest.java:249
+
+KalahMoveStonesTest > testMoveStonesOneMovePlayerTwo() FAILED
+    java.lang.RuntimeException at KalahMoveStonesTest.java:201
+3 actionable tasks: 3 executed
+
+Failed to map supported failure 'org.opentest4j.AssertionFailedError: Did not throw exception on invalid move ==> Expected mancala.InvalidMoveException to be thrown, but nothing was thrown.' with mapper 'org.gradle.api.internal.tasks.testing.failure.mappers.OpenTestAssertionFailedMapper@3e2fc448': Cannot invoke "Object.getClass()" because "obj" is null
+
+61 tests completed, 26 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/jamah/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
+
+
+********
+ Polymorphism implementation 
+********
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+SaverTest > testSaverClass() FAILED
+    org.opentest4j.AssertionFailedError at SaverTest.java:18
+3 actionable tasks: 3 executed
+
+
+17 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/jamah/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
